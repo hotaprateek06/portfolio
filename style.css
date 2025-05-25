@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #00c6ff;
+    color:white;
+    line-height: 1.8;
+    padding-top: 60px; 
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in forwards;
+  }
+  @keyframes fadeIn{
+    to{
+      opacity: 1;
+    }
+  }
+  h1{
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20 px;
+  }
+.abc {
+  text-align: center;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.xyz {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffdf00;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  background-color: white;
+  height: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+.icons{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  gap: 25px;
+}
+.icons a img{
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+.icons a:hover img{
+  transform: scale(1.1);
+}
+.photo img{
+  align-items: center;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.about{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  display: inline-block;
+}
+h2{
+  text-align: center;
+  font-size: 4 rem;
+}
+.biopic{
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.details,.list{
+font-weight: bold;
+font-style: italic;
+font-size: 1.5rem;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.projectd{
+  text-align: center;
+  margin: auto;
+  box-shadow:0 4px 15px rgba(0, 0, 0, 0.2) ;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  width: 300px;
+  border-radius: 10px;
+  transition:transform 0.5s ;
+}
+.projectd:hover {
+    transform: scale(1.03);
+  }
+.projectd h2{
+  font-size: 1.5 rem;
+}
+.projectd p{
+  font-size: 1 rem;
+}
+.btn{
+  background-color: rgb(103, 197, 241);
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #ffdf00;
+}
