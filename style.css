@@ -89,6 +89,7 @@ nav {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    margin-right: auto;
   }
 
   .menu {
