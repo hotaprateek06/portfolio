@@ -1,0 +1,32 @@
+.details,.list{
+font-weight: bold;
+font-style: italic;
+font-size: 1.5rem;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.projectd{
+  text-align: center;
+  margin: auto;
+  box-shadow:0 4px 15px rgba(0, 0, 0, 0.2) ;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  width: 300px;
+  border-radius: 10px;
+  transition:transform 0.5s ;
+}
+.projectd:hover {
+    transform: scale(1.03);
+  }
+.projectd h2{
+  font-size: 1.5 rem;
+}
+.projectd p{
+  font-size: 1 rem;
+}

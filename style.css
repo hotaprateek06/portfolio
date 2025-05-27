@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, cursive;
+  }
+  
+  body {
+    background:linear-gradient(to bottom,
+    #332D56 ,
+    #4E6688,
+    #71C0BB,
+#E3EEB2
+    );
+  
+    color:#222;
+    line-height: 1.8;
+    padding-top: 60px; 
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in forwards;
+  }
+  @keyframes fadeIn{
+    to{
+      opacity: 1;
+    }
+  }
+  h1{
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20 px;
+    color: aliceblue;
+  }
+.abc {
+  text-align: center;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.xyz {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.photo img{
+  align-items: center;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.about{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  display: inline-block;
+}
+h2{
+  text-align: center;
+  font-size: 4 rem;
+}
+.biopic{
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+  background-color: rgb(103, 197, 241);
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #ffdf00;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh -60px); 
+}
