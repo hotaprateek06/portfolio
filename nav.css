@@ -53,7 +53,7 @@ nav {
 
   .menu {
     position: absolute;
-    top: 25px;
+    top: 35px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.95);
     flex-direction: column;
